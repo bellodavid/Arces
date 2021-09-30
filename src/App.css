@@ -1,39 +1,88 @@
-.App {
-  text-align: center;
+body{
+  margin: 5rem;
+  background: rgb(4, 4, 31);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
+header{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: flex-end;
+  
+}
+header>h1{
+  color: white;
+}
+.home_container{
+
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.signup{
+  background: rgb(53, 196, 53);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 800;
+  color: rgb(4, 4, 31);
+  height: 100px; 
+  width: 150px;
+  font-size: larger;
+}
+.coinbuttons{
+display: flex;
+justify-content: space-around;
+}
+.coin{
+  background: rgb(53, 196, 53);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 800;
+  color: white;
+  width: 5rem;
+}
+.body__content{
+  top: 10rem;
+}
+.body__content > div{
+  color: black;
+}
+.card{
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 2.5rem;
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px 8px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.deposit{
+  border: none;
+  background-color: orange;
+  border-radius: 5px;
+  padding: none;
+  margin-top: 5px;
+}
+.transaction__btns{
+  display: flex;
+  height: 2rem;
+  justify-content: space-around;
+  width: 100%;
+}
+.sec__coin{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-right: 45%;
+  justify-content: flex-start;
+  
+}
+.sec__coin > button{
+border: 1px solid whitesmoke;
+background: rgb(53, 196, 53);
+padding: 0.5rem;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
-}
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+button:hover{
+ cursor: pointer;
 }
